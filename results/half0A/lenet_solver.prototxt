@@ -1,0 +1,17 @@
+# The train/test net protocol buffer definition
+net: "lenet_train_test.prototxt"
+test_iter: 1000
+test_interval: 1000
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.1
+stepsize: 10000
+display: 100
+max_iter: 100000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 10000
+snapshot_prefix: "caffe_imagenet_train"
+# solver mode: CPU or GPU
+solver_mode: GPU
